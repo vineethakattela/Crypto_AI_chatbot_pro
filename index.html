@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Chatbot</title>
+    <link rel="stylesheet" type="text/css" href="style7.css">
+    <link rel="stylesheet"
+       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Mochiy+Pop+One&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+    <body>
+      <header>
+        <a href="#" class="logo">Mental Health Chatbot</a>
+        <ul class="navlist">
+            <li><a href="Meditation tips.html">Home</a></li>
+            <li><a href="Meditation tips.html">Meditation</a></li>
+            <li><a href="Meditation tips.html">Therapy</a></li>
+            <li><a href="Therapy.html">About</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <section class="hero">
+         <div class="hero-text">
+            
+            <h4>Hiiii! </h4>
+           <h1>I'M CRYPTO</h1>
+           <P>"There is hope, even when your brain<br>  tells you there isn't."</P>
+           <a href="#" class="opt">CONSULT</a>
+           <a href="#" class="ctaa"><i class="ri-play-fill">Watch Videos</i></a>
+         </div>
+         <div class="hero-img">
+            <img src="./assets/doctor.png">
+         </div>
+    </section>
+    <style>
+      .rw-conversation-container .rw-header{background-color: #dd5a09ff ;}
+      .rw-conversation-container .rw-messages-container .rw-message .rw-client{background-color: #e87028 ;}
+      .rw-launcher{background-color: #dd5a09d2;}
+      .rw-conversation-container .rw-reply{background-color: #e87028; border: 1px;}
+    </style>
+        <script>!(function () {
+            let e = document.createElement("script"),
+              t = document.head || document.getElementsByTagName("head")[0];
+            (e.src =
+              "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+              // Replace 1.x.x with the version that you want
+              (e.async = !0),
+              (e.onload = () => {
+                window.WebChat.default(
+                  {
+                    initPayload: '/bot_welcome_message',
+                    customData: { language: "en" },
+                    socketUrl: "http://localhost:5005",
+                    title: 'Crypto', 
+                    subtitle: 'An AI Assistant',
+                    profileAvatar: "./assets/robot.svg",
+                    openLauncherImage: "./assets/comment.svg",
+                    showFullScreenButton: true,
+                    showMessageDate: true,
+                    inputTextFieldHint: "What's in your mind....",
+                    // add other props here
+                  },
+                  null
+                );
+              }),
+              t.insertBefore(e, t.firstChild);
+          })();
+          localStorage.clear();
+          </script>
+    </body>
+</html>

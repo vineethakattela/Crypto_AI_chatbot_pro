@@ -1,0 +1,280 @@
+version: "3.1"
+
+intents:
+  - bot_welcome_message
+  - greet
+  - name
+  - goodbye
+  - affirm
+  - deny
+  - thanking
+  - mood_great
+  - mood_unhappy
+  - dontwannatalk
+  - bot_challenge
+  - excitement
+  - wellbeing
+  - empty
+  - yes_history_mental_illness
+  - hobby
+  - no_history_mental_illness
+  - family_problems
+  - work_problems
+  - stress
+  - boring
+  - cannot_focus
+  - proj_tension
+  - depressed
+  - could_not_sleep
+  - achievement
+  - mood_solitude
+  - levelone
+  - leveltwo
+  - levelthree
+  - tell_name
+  - give_name
+  - repeat_name
+  - worthless
+  - help
+  - anxious
+  - death
+  - understand
+  - done
+  - suicide
+  - wrong
+  - something
+  - ask
+  - angry
+  - aggression
+
+entities:
+  - good
+  - sad
+  - name
+##  - family
+##  -  
+  
+slots:
+  name:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: name
+      
+responses:
+  utter_greet:
+  
+  - text: "Hello there.What should I call you?"
+  - text: "Hi there.What can I call you?"
+  - text: "Hi there.What does everyone call you?"
+  - text: "Great to see you. What is your name?"
+  
+  
+  utter_greet1:
+  - text: Tell me how are you feeling today?
+  - text: What brings you here today?
+  - text: How are you feeling today?
+  - text: How do you feel currently?
+  - text: How are you?
+
+  utter_cheer_up:
+  - text: Try our meditation tips
+  - text: Try our Music Therapy
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_excitement:
+  - text: "What are you excited about?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "tata"
+  - text: "see ya"
+  - text: "please come again"
+  - text: "missya"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_welcome:
+  - text: "Your welcome!!!!😁"
+
+  utter_ask:
+  - text: "Please tell me what is going on with you?"
+  - text: "What is the problem, please tell me?"
+
+
+  utter_encourage:
+  - text: "It's fine. Take your time, take a deep breath and do what makes you feel better."
+  
+  utter_history:
+  - text: " Do you or your family have any history of mental illness?"
+
+  utter_herited:
+  - text: "If it is inherited you must go to professionals."
+
+  utter_alter:
+  - text: "To escape this situation you have to focus on a particular thing you like just like your hobby."
+
+  utter_hobby:
+  - text: "Then you must ty to focus on that, you will feel better."
+   
+  utter_positivity:
+  - text: It’s hard to find the motivation to focus on the positive when positivity seems like nothing more than wishful thinking.
+  - text: Maintaining positivity is a daily challenge that requires focus, attention, and practice.
+  - text: Once you replace negative thoughts with positive ones, you’ll start having positive results.
+  - text: Positive thinking is more than just a tagline. It changes the way we behave. And when you're positive, it not only makes you better, but it also makes those around you better.
+  - text: In every day, there are 1,440 minutes. That means we have 1,440 daily opportunities to make a positive impact.So go ahead dear. Make urself happy
+  
+  utter_share_positivity:
+  - text: I've got something that I want to tell you today. Would you like to hear?
+
+  utter_response_sad:
+   - text: would you like to tell me more about it?
+
+  utter_console_question:
+  - text: Tell me what makes you happy?
+  
+  utter_ask_whats_bothering:
+  - buttons:
+    - payload: /family_problems
+      title: Family Issue
+    - payload: /work_problems
+      title: problems at school/uni/work
+    - payload: /stress
+      title: I am Stressed
+    - payload: /boring
+      title: Bored
+    - payload: /depressed
+      title: I am depressed
+    text: Please tell me what's bothering you?
+    
+  utter_motivation:
+  - text: 'I see so you have problems with you work environment, here is something that can help you: https://clarkebenefits.com/wp-content/uploads/2018/05/7-Ways-to-Reduce-Workplace-Stress.jpg'
+  
+   
+  utter_console:
+  - text: It's okay dear... This too shall pass
+  - text: I know this is tough... But every problem has a solution
+  - text: Relax dear... things will get better
+  
+  utter_solitude_quotes:
+  - text: Treat yourself with a solo date Order your favorite dishes...This really works!!!
+  - text: Go for an evening walk.. This will enhance the supply of oxygen to the lungs making you feel more energetic. This is a good option to kill your loneliness and feel more close to the nature. Once you make nature your dear friend, you will hardly be alone.
+  - text: Just shut down all your digital gadgets or just log off and have a good time outside or go on to the roof top enjoying the overview of the city with your coffee mug.
+  - text: Hey adopt a hobby, Buy a DSLR or start cooking or sketching or start learning musical instruments.
+  - text: Watching TED Talks can really inspire you and take your tiring soul out of loneliness. You can either go to TED Talk’s official website or can browse some on YouTube.
+  - text: If your boring soul needs a fresh start, just start working out. Join a nearby gym or physical training workshop or a Yoga class. It will help rejuvenate your mind and rush blood in the body due to workout and meditation will kill the boredom and most importantly your loneliness.
+
+  utter_suggest:
+   
+   - text: 'Check this list out to find something helpful [here]: https://youtu.be/NbY1sCHy-eM'
+   - text: Try some indoor games,mobile games,video games.
+   - text: Take a walk from outside
+   - text: Try to read some Comics books 
+   
+  utter_proj_tension:
+   - text: There's nothing that a person cannot do....you just need to find ways to complete your project.
+   - text: Everyone feels like they can't do something just because it seems hard but once you actually get into it, you understand it's pretty easy and you might find it interesting as well.
+ 
+  utter_focus:
+   - text: If you don't feel ike studying, just take a break.... you deserve one.😬 Go for a walk, listen to music, do things that make you forget about studies and then after a few hours just get back to your books.
+   - text: You need a break my friend....😁
+
+  utter_more:
+   - text: Would you like to tell me more about it?
+   
+  utter_ask_level:
+  - buttons:
+    - payload: /levelone
+      title: Little 😓
+    - payload: /leveltwo
+      title: Stressed enough 😣
+    - payload: /levelthree
+      title: Much stressed 😖
+    text: How stressed are you?
+       
+      
+  utter_help_levelone:
+   - text: 'Here is something for you: https://terrywilson3.com/wordpress/wp-content/uploads/2016/01/blogGraphic5waysdealwithstress.jpg'
+  
+  utter_help_leveltwo:
+   - text: 'Okay, here is something to help you with : https://terrywilson3.com/wordpress/wp-content/uploads/2016/01/blogGraphic5waysdealwithstress.jpg'
+  
+  utter_help_levelthree:
+  - text: 'Here is something to help you with: https://www.youtube.com/watch?v=TBsHxfHXFS8'
+  
+
+
+  utter_worthless:
+  - text: "It's only natural to feel this way. Tell me more. What else is on your mind?"
+  - text: "Let's discuss further why you're feeling this way."
+  - text: "I first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change."
+
+  utter_help:
+  - text: "Sure. Tell me how can i assist you"
+  - text: "Tell me your problem so that i can assist you"
+  - text: "Yes, sure. How can I help you?" 
+  
+  utter_anxious:
+  - text: Don't be hard on yourself. What's the reason behind this?
+  - text: I understand that it can be scary. Tell me more about it.
+  
+  utter_death:
+  - text: I'm sorry to hear that. If you want to talk about it. I'm here.
+  - text: I am really sorry to hear that. I am here to help you with grief, anxiety and anything else you may feel at this time.
+  - text: My condolences. I'm here if you need to talk.
+  
+  utter_understand:
+  - text: I'm sorry to hear that. I'm doing my best to help
+  - text: I'm trying my best to help you. So please talk to me
+  - text: It sound like i'm not being very helpful right now.
+  
+  utter_done:
+  - text: I heard you & noted it all. See you later.
+  - text: Oh okay we're done for today then. See you later.
+  - text: I hope you have a great day. See you soon.
+  - text: Okay we're done. Have a great day.
+  - text: Okay I see. Enjoy the rest of your day then.
+  
+  utter_suicide:
+  - text: "I'm very sorry to hear that but you have so much to look forward to. Please seek help by contacting: 9152987821"
+  
+  utter_wrong:
+  - text: I'm very sorry. Let's try that again
+  
+  utter_something:
+  - text: Okay sure. What do you want to talk about?
+  - text: Alright no problem. Is there something you want to talk about?
+  - text: Is there something else that you want to talk about?
+  
+  utter_ask_help:
+  - text: "Sure. I'll try my best to answer you"
+  - text: "Of course. Feel free to ask me anything. I'll do my best to answer you"
+ 
+ 
+  utter_angry:
+  - text: Did I say something wrong?
+  - text: I'm sorry if i offended you in anyway. I'm only here to help
+  - text: Forgive me if i did anything to offend you. I only want to help
+   
+  utter_aggression:
+  - text: Can you tell me the reason?
+  - text: May i know the reason?
+  - text: Can you tell me what are you  facing?
+
+  utter_bot_welcome_message:
+  - text: Hii I am Crypto, Say hi to get started!
+
+actions:
+- action_recieve_name
+- action_say_name
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

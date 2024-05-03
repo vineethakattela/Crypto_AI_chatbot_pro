@@ -1,0 +1,650 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - later gater
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - cu
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - for sure
+    - why not
+    - oh yess
+    - oh yeah
+    - of course
+    - ok
+
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nothing
+
+- intent: thanking
+  examples: |
+    - thankyou
+    - thanks to you
+    - thanks dear
+    - Thank you so much for being there
+    - thats fine..thank you
+    - thank you for being there 
+    - yup..thanks 
+    - thnx
+    - nice video ....thanks
+    - thank you dear
+    - thanks
+
+- intent: mood_great
+  examples: |
+    - very [good](good)
+    - I am feeling very [good](good)
+    - I feel great today
+    - I am feeling [good](good)
+    - I'm [good](good)
+    - Today is a [great](good) day
+    - I am so [happy](good) today
+    - I'm [happy](good)
+    - [Happy](good)
+    - [perfect](good)
+    - very [good](good)
+    - [great](good)
+    - [wonderful](good)
+    - I am feeling very [good](good)
+    - I am [great](good)
+    - I'm [good](good)
+    - feel [good](good)
+    - veryy [happy](good)
+    - Life's [good](good)
+    - [Awesome](good)
+    - Happy to hear that
+    - I'm happy to hear that
+    - I'm so [happy](good) today
+    - I'm fine
+    - I'm perfectly fine
+    - Doing [great](good).
+    - I'm ok
+    - I feel ok
+    - cheerful
+    - I'm doing [good](good)
+    - Today is really wonderfull day
+    - Feeling [good](good)
+    - feeling [great](good)
+    - I'm [happpyyy](good)
+    - I'm so [happy](good)
+
+- intent: mood_unhappy
+  examples: |
+    - I am [sad](sad)
+    - I am very [sad](sad)
+    - I am unhappy [sad](sad)
+    - I am feeling very [bad](sad)
+    - i am feeling [awful](sad)
+    - I am in [terrible](sad) mood right now
+    - i am extremely [sad](sad)
+    - so [sad](sad)
+    - [worse](sad) than ever
+    - I'm feeling a bit [gloomy](sad).
+    - I'm feeling a little blue right now
+    - I'm [worried](sad) so much
+    - I'm totally [irritated](sad)..
+    - So [gloomy](sad)..
+    - I said that i'm happy but actually i'm not happy
+    - I'm terribly sad today
+    - I'm really disappointed today
+    - I'm totally [distressed](sad)
+    - I'm too [frustrated](sad)
+    - I'm feeling [down](sad) today.
+    - I'm [worried](sad)
+    - I'm really [upset](sad) these days.
+
+- intent: dontwannatalk
+  examples: |
+    - Don't wanna talk about it!
+    - Don't feel like talking
+    - I dont wanna talk about it
+    - No just stay away
+    - don't want to tell you
+  
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: excitement
+  examples: |
+    - awesome
+    - amazing
+    - cool
+    - dope
+    - fantastic
+    - marvellous
+    - I am very excited today
+    - i am feeling very happy today
+
+- intent: wellbeing
+  examples: |
+    - I am not feeling well
+    - i am unwell
+    - I do not feel well today
+
+- intent: yes_history_mental_illness
+  examples: |
+    - yes i have history of mental illness in my family
+    - yeah my family does have history
+    - yepp my relatives are suffering from a form of mental illness
+    - yes i had a mental issue before
+    - i think my grandpa had some mental problems lately
+    - we have no problem history but lately my grandparents had some minor mental health issues due to aging
+
+
+- intent: no_history_mental_illness
+  examples: |
+    - no i dont have history of mental illness in my family
+    - nope my family doesnt have history
+    - i dont know not that i am aware of..
+    - i am not aware of any mental health problems of my family
+    - I dont know
+    - i dont have any
+    - i am not sure
+
+- intent: family_problems
+  examples: |
+    - I hate my family.
+    - Too much workpressure from family
+    - I hate my household
+    - I'm hateful to my family
+    - i don't want to be with my family anymore.
+    - I'm not going to be with my family
+    - I don't want my family to be with me
+    - I wouldn't like to be with my family
+    - I'd like to run away from home
+    - i want to run away from my home
+    - My parent are fighting
+    - I fight with my parents
+    - My parents dont understand me
+    - My parents always undermine me
+    - I think my parents don't like me
+    - I fight with my sister
+    - I fight with my brother
+    - they(family) hate me
+    - i think they(family) hate me
+
+- intent: work_problems
+  examples: |
+    - I have a lot of work to do
+    - too much work pressure in company
+    - exams are coming
+    - I have not studied enough
+    - So many assignments to do
+    - poor communication
+    - conflicting styles
+    - Interpersonal conflict
+    - Communication problems
+    - Gossip
+    - Bullying
+    - Harassment
+    - Discrimination
+    - Low motivation and job satisfaction
+    - Performance issues
+    - Poor job fit
+    - I want to discontinue my job
+    - does not have work life balance
+    - I cant understand anything
+
+- intent: stress
+  examples: |
+    - going through a tough time
+    - I feel stuck
+    - Anxiety
+    - Difficulty concentrating or making decisions
+    - Fatigue
+    - Headache
+    - Heart palpitations
+    - Mood swings
+    - Muscle tension and pain
+    - Stomach problems
+    - I am so stressed out
+    - I am so stressed
+    - I feel stuck
+    - I am feeling stressed
+    - I still feel stressed
+    - I am so burned out
+
+- intent: depressed
+  examples: |
+    - i am depressed
+    - i am feeling like I cant do anything
+    - i cant do anything
+    - I'm so demotivated now a days
+    - i am in depression
+    
+- intent: boring
+  examples: |
+    - life is boring
+    - I am bored
+    - I have nothing to do
+    - I dont know what to do
+    - I'm so bored right now
+    - I'm so bored
+    - I'm quite bored
+    - I'm not having very much fun right now
+    - I'm not having very much fun
+    - I'm not having fun
+    - I'm freaking bored
+    - I'm bored to death
+    - I'm bored stiff
+    - I'm bored out of my mind
+    - I'm very bored
+    - I'm bored AF
+    - It's been a boring week
+    - I could die from boredom
+    - I can't think of anything I want to do
+    - I can't help it. I'm bored
+    - I can't help but be bored
+    - I am so bored right now
+    - I am so bored
+    - I am bored at work
+    - I am bored
+    - I am always bored
+    - I always seem to be bored
+    - Help! I'm bored.
+    - God, I am so bored
+    - i m so tired
+
+- intent: cannot_focus
+  examples: |
+    - I don't feel like studying
+    - I don't wanna study
+    - What's the point of studying
+    - Why should i study
+    - Focusing too hard
+    - Working on many things at same time
+    - Multitasking
+    - No physical activity
+    - Laziness
+    - Distracted by phone, people, surrounding
+    - Search for reasons to give up
+    - Tired 
+    - Hectic day
+    - Dull on mood 
+    - Too much stress
+    - too much to deal with on my plate
+    - Lack of sleep
+    - Improper sleeping routine
+    - Disturbed routine in life
+    - Lack of motivation
+    - Don't feel like doing it
+    - I do not feel satisfied with this 
+    - Poor job satisfaction
+    - Feeling depressed
+    - I want to distract myself
+    - Don't like this kind of work
+    - Not comfortable with what I am doing
+    - Change in lifestyle
+    - Change in surrounding at workplace
+    - Uncomfortable workspace
+    - Weather is making me feel down, low
+    - being unable to remember things that occurred a short time ago difficulty sitting still
+    - difficulty thinking clearly
+    - frequently losing things or difficulty remembering where things are inability to make decisions
+    - inability to perform complicated tasks
+    - lack of focus
+    - lacking physical or mental energy to concentrate
+    - making careless mistakes
+    - feeling restless
+    - cannot focus on an empty stomach
+    - need something to concentrate on
+    - unusual feelings of tiredness
+    - I know exactly what I need to do, but I cant bring myself to do it
+    - I know what my objectives are, but I cant figure out how to get there 
+    - Having trouble Prioritizing Whats Most Important
+    - Emotional Procrastination
+    - Time Management Issues
+    - I cannot manage time
+    - Physical issues
+    - Something is on my mind
+    - I am distracted by
+
+- intent: proj_tension
+  examples: |
+    - I won't complete my project in time
+    - I wont complete my project
+    - I dont know how to do my project
+    - My project is really hard
+    - Risk factors
+    - Fear of boss
+    - Fear of deadlines
+    - ear of failure of project
+    - Improper knowledge 
+    - Insufficient data
+    - lack of proper planning
+    - Lack of finance
+    - no sponsor for project
+    - less accuracy
+    - Unexpected output
+    - Unpredicted difficulties
+    - Unwanted problems
+    - presentation is not upto mark
+    - Inadequate risk management
+    - Project manager lack experience and training
+    - No use of formal methods and strategies
+    - Lack of effective communication
+    - Poor management of expectations
+    - Lack of detailed documentation
+    - Failure to track requirements
+    - Failure to track progress
+    - Lack of detail in the project plans
+    - Inaccurate time and effort estimates
+    - Last moment client changes
+    - Unsatisfied client
+    - pressure from boss
+    - Pressure to meet the requirements within time
+    - Project data incorrect
+    - Indecisive problems
+    - Cannot make a firm decision
+    - Did not considered this kind of risk
+    - limited finance
+    - Lack of proper instruments
+    - Lack of technology
+    - Insolvable errors
+    - Improper build
+    - Reduced quality of project
+    - Quality factor
+    - Approval for the decisions made
+    - Extra funding
+    - Require more data
+    - Improper research
+    - Inexperienced team members
+    - New team members, team manager
+
+
+- intent: could_not_sleep
+  examples: |
+    - cant sleep
+    - cannot sleep
+    - i could not sleep
+    - i cannot sleep
+    - i have insomnia
+    - I keep thinking on baseless things
+    - My mind is active at night
+    - Something is bothering me
+    - I cannot make myself calm down
+    - I keep on thinking on random things
+    - I cannot slow my thoughts
+    - I cannot control my thoughts
+    - i have sleeping disorder
+    - I suffer from insomnia
+    - Change in sleeping environment
+    - change in my sleeping place
+    - I have some medical issues
+    - Suffering from mental issues
+    - I restrict myself from sleeping
+    - Work and study commitments
+    - Deadlines 
+    - Psychological reasons
+    - Short term illness
+    - I am a night shift worker
+    - i work in shifts
+    - Lack of physical tiredness
+    - No excercise
+    - associated with sugary drinks
+    - Poor sleep quality
+    - meeting deadlines
+    - a sleeping environment that is noisy or not the right temperature
+    - using electronic devices close to bedtime or keeping them in the bedroom
+    - medical problems, such as depression, sleep apnea, or chronic pain
+    - caring for another person during the night
+    - Too much work load
+    - Excess thought process
+ 
+ 
+
+- intent: achievement
+  examples: |
+    - I have won gold medal
+    - i have won football match
+    - i have won cricket match
+    - i got my birthday gift
+    - my parents gave me presents
+    - today is durgapuja
+    - today is festival
+    - today is christmas
+    - i got an A in my exam
+    - i have got ninety percent in my exam
+  
+- intent: empty
+  examples: |
+    - Its hard to say
+    - i dont know how to say
+    - i dont know what to say
+
+- intent: hobby
+  examples: |
+    - I like to play guitar
+    - i like to read story book
+    - i am fond of eating
+    - i am fond of football
+    - my hobby is to play cricket
+    - i have a hobby to collect stamps
+    - I love to play guitar
+    - I love eating
+    - i love drawing
+    
+- intent: mood_solitude
+  examples: |
+    - I feel lonely
+    - I feel sad and lonely
+    - I feel lonelyyyy
+    - I am alone
+    - i am alone
+    - i m lone
+    
+- intent: levelone
+  examples: |
+    - simple problems
+    - deadlines of work
+    - time management
+    - little to low stressing events
+    - daily problems
+    - exams are near
+    - submissions
+    - work related issues
+    - i am not getting a job
+    - changes in life work habits
+    - low on money
+    - financial worries
+  
+- intent: leveltwo
+  examples: |
+    - relationships
+    - daily issues with pressing matters
+    - sensitive  issues
+    - relational clashes
+    - family quarallels
+    - fight with partner
+    - past events
+    - memories of past events
+    - consequences of past events
+    - competition related stress or worries
+    - social disturbance in life
+    - social worries
+    - people talking behind back
+    - fear of social life
+    - low on confidence at any place 
+    - no self confidence
+  
+- intent: levelthree
+  examples:  |
+    - health issues
+    - health is not good
+    - whole family depends on me
+    - dependency issues
+    - fear of new changes
+    - scared of life changing situtions
+    - surrounding environment matters stressing me out
+    - stage fear
+    
+- intent: tell_name
+  examples: |
+    - I want to tell you my name
+    - give name
+    - ill give you my name
+    - do you want to know my name?
+
+- intent: repeat_name
+  examples: |
+    - Can you tell my name?
+    - what is my name?
+    - tell me my name
+    - do you know my name
+    - repeat my name
+
+- intent: give_name
+  examples: |
+    - snehasish(name)
+    - ankita(name)
+    - shilpi(name)
+    - subha(name)
+    - prince(name)
+    
+- intent: worthless
+  examples: |
+    - I feel so worthless
+    - No one likes me
+    - I can't do anything
+    - I am so useless
+    - Nothing makes sense anymore
+    
+- intent: something
+  examples: |
+    - I want to talk about something else
+    - Let's talk about something else
+    - Can we not talk about this?
+
+- intent: ask
+  examples: |
+    - Can I ask you something?
+    - May i ask you something?
+    - can i ask a question
+  
+    
+- intent: angry
+  examples: |
+    - Shut up!!
+    - You are so stupid
+    - Don't ask me stupid questions
+    - Are you stupid?
+    - It is none of your business.
+    - Mind your own business!
+    - It’s none of your business!    
+    - Damn it.
+    - Rubbish!
+    
+- intent: aggression
+  examples: |
+    - I want to kill someone
+    - I want to punch the wall
+    - I want to slap him/her
+    - I want to kick him/her
+    - I want to shoot him
+    - I am pissed
+    
+- intent: help
+  examples:  |
+    - Can you help me?
+    - I need help
+    - give me a hand please
+    - Support me please
+    - What can you do for me?
+    
+- intent: wrong
+  examples: |
+    - What are you saying?
+    - That doesn't make sense
+    - Wrong response
+    - Wrong answer
+    
+- intent: suicide
+  examples: | 
+    - I want to kill myself
+    - I've thought about killing myself
+    - I want to die
+    - I am going to kill myself
+    - I am going to commit suicide
+    
+- intent: done
+  examples: |
+    - That's all
+    - I don't have anything more to say
+    - Nothing else
+    - That's all i have to say
+    - no, that would be all
+    
+- intent: understand
+  examples: |   
+    - You don't understand me.
+    - You're just some robot. How would you know
+    - You can't possibly know what i'm going through
+    - You're useless
+    - You can't help me
+    - Nobody understands me
+    
+- intent: death
+  examples: |
+    - My mom died
+    - My brother died
+    - My dad passed away
+    - My sister passed away
+    - Someone in my family died
+    - My friend passed away
+    
+- intent: anxious
+  examples: |
+    - I feel so anxious
+    - I'm so anxious because of
+
+- intent: bot_welcome_message
+  examples: |
+    - hi bot
+    - hello bot

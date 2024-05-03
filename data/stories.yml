@@ -1,0 +1,203 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_wrong
+  - intent: dontwannatalk
+  - action: utter_something
+  - action: utter_ask_whats_bothering
+
+- story: excited
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: excitement
+  - action: utter_excitement
+  - intent: achievement
+  - action: utter_happy
+
+- story: feeling_sad
+  steps:
+  - intent: mood_unhappy 
+  - action: utter_response_sad
+  - intent: affirm 
+  - action: utter_ask_whats_bothering
+  - intent: deny 
+  - action: utter_console_question
+  
+- story: family_problems
+  steps:
+  - intent: family_problems 
+  - action: utter_more
+  
+
+  
+- story: work_problems
+  steps:
+  - intent: work_problems 
+  - action: utter_motivation
+  
+- story: Project tension
+  steps:
+  - intent: proj_tension
+  - action: utter_proj_tension
+  
+- story: study focus
+  steps:
+  - intent: cannot_focus
+  - action: utter_focus
+
+- story: positivity
+  steps:
+  - intent: mood_great
+  - action: utter_positivity
+
+- story: have mental illness history 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  
+- story: short story 1
+  steps:
+  - intent: wellbeing
+  - action: utter_ask
+  
+- story: short story 2
+  steps:
+  - intent: empty
+  - action: utter_encourage
+  
+- story: short story 3
+  steps:
+  - intent: depressed
+  - action: utter_history
+  - intent: yes_history_mental_illness
+  - action: utter_herited
+  - action: utter_alter
+- story: short story 4
+  steps:
+  - intent: hobby
+  - action: utter_hobby
+  
+- story: solitude
+  steps:
+  - intent: mood_solitude
+  - action: utter_console
+  - intent: affirm
+  - action: utter_share_positivity
+  - intent: affirm
+  - action: utter_solitude_quotes
+  - intent: affirm
+  - action: utter_happy
+  
+- story: boring
+  steps:
+  - intent: boring 
+  - action: utter_suggest
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: thanking
+  - action: utter_welcome
+  
+  
+- story: stress
+  steps:
+  - intent: stress 
+  - action: utter_more
+  - intent: affirm
+  - action: utter_ask_level
+
+- story: level_one
+  steps:
+  - intent: levelone
+  - action: utter_help_levelone
+  - intent: thanking
+  - action: utter_happy
+
+- story: level_two
+  steps:
+  - intent: leveltwo
+  - action: utter_help_leveltwo
+  
+- story: level_three
+  steps:
+  - intent: levelthree
+  - action: utter_help_levelthree
+  
+- story: name path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: give_name
+  - action: action_recieve_name
+  - intent: repeat_name
+  - action: action_say_name 
+
+- story: suicidal
+  steps:
+  - intent: worthless
+  - action: utter_worthless
+  - intent: dontwannatalk
+  - action: utter_console
+  - intent: suicide
+  - action: utter_suicide
+  
+- story: death
+  steps:
+  - intent: death
+  - action: utter_death
+  
+- story: aggression
+  steps:
+  - intent: aggression
+  - action: utter_aggression
+  - intent: dontwannatalk
+  - action: utter_ask_whats_bothering
+  
+- story: angry
+  steps:
+  - intent: angry
+  - action: utter_angry
+  - intent: understand
+  - action: utter_understand
+  - action: utter_ask_whats_bothering
+  
+- story: stress_sleep
+  steps:
+  - intent: could_not_sleep
+  - action: utter_ask_whats_bothering
+  - intent: stress
+  - action: utter_share_positivity
+  - intent: affirm
+  - action: utter_alter
+
+- story: Bot First Message
+  steps:
+  - intent: bot_welcome_message
+  - action: utter_bot_welcome_message

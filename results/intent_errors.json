@@ -1,0 +1,26 @@
+[
+  {
+    "text": "awesome",
+    "intent": "excitement",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.6758491396903992
+    }
+  },
+  {
+    "text": "yes i have history of mental illness in my family",
+    "intent": "yes_history_mental_illness",
+    "intent_prediction": {
+      "name": "no_history_mental_illness",
+      "confidence": 0.8843587636947632
+    }
+  },
+  {
+    "text": "You can't help me",
+    "intent": "understand",
+    "intent_prediction": {
+      "name": "help",
+      "confidence": 0.5804858803749084
+    }
+  }
+]
